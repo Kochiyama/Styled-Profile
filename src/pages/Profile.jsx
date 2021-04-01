@@ -5,7 +5,6 @@ import InfoGrid from '../components/InfoGrid';
 
 const Page = styled.div`
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +18,10 @@ const BackgroundImg = styled.img`
   z-index: -999;
   position: absolute;
   top: 0;
+
+  @media (max-width: 500px) {
+    height: 20vh;
+  }
 `;
 
 const ProfileContainer = styled.main`

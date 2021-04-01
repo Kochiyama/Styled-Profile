@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Grid = styled.div`
   width: 100%;
+  margin-bottom: 100px;
   height: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,13 +13,25 @@ const Grid = styled.div`
     'bot-left bot-right';
   grid-column-gap: 15px;
   grid-row-gap: 10px;
+
+  @media (max-width: 500px) {
+    padding: 3vw;
+    margin-bottom: 200px;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'top'
+      'bot-left'
+      'bot-right';
+  }
 `;
 
 const GridItem = styled.div`
   padding: 20px;
   grid-area ${(props) => props.gridArea};
   border-radius: 10px;
-  background: #1a1f2b;
+  background: #1A1F29;
   display: flex;
   flex-direction: column;
 `;

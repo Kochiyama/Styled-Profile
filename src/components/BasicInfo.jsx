@@ -3,9 +3,14 @@ import styled from 'styled-components';
 
 const BasicInfoContainer = styled.div`
   display: flex;
+  margin-top: 20vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    margin-top: 10vh;
+  }
 `;
 
 const ProfileImg = styled.img`
