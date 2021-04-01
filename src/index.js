@@ -19,7 +19,7 @@ const userData = {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
+    <Profile userData={userData} />
   </React.StrictMode>,
   document.getElementById('root')
 );
